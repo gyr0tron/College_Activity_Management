@@ -23,10 +23,13 @@ import router from './router';
 // Vue Store
 import store from './store';
 
-// Element UI
-import Element from 'element-ui';
-import 'element-ui/lib/theme-chalk/index.css'
-Vue.use(Element);
+// Bootstrap Vue
+import BootstrapVue from 'bootstrap-vue';
+Vue.use(BootstrapVue);
+import '@coreui/icons/css/coreui-icons.min.css';
+import 'font-awesome/scss/font-awesome.scss';
+import 'simple-line-icons/scss/simple-line-icons.scss';
+import './../sass/style.scss'
 const app = new Vue({
     el: '#app',
     router,

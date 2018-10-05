@@ -2,9 +2,5 @@
     "/js/app.js": "/js/app.js",
     "/css/app.css": "/css/app.css",
     "/css/home.css": "/css/home.css",
-<<<<<<< HEAD
-    "/js/all.js": "/js/all.js"
-=======
     "/js/home.js": "/js/home.js"
->>>>>>> 89bbfa402ba7f649188b8198360f09c62930d1cd
 }
