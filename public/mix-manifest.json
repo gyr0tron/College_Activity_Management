@@ -1,46 +1,6 @@
 {
-<<<<<<< HEAD
     "/js/app.js": "/js/app.js",
-<<<<<<< HEAD
-    "/css/app.css": "/css/app.css",
-    "/css/home.css": "/css/home.css",
-    "/js/jquery.min.js": "/js/jquery.min.js",
-    "/js/home.js": "/js/home.js",
-    "/0.65bcea3abf5f27d0cca9.hot-update.js": "/0.65bcea3abf5f27d0cca9.hot-update.js",
-    "/0.7b22594b4c4bdd0b82d0.hot-update.js": "/0.7b22594b4c4bdd0b82d0.hot-update.js",
-    "/0.7389c6469ad33242d4b0.hot-update.js": "/0.7389c6469ad33242d4b0.hot-update.js",
-    "/0.f391201ca51e9b3026f9.hot-update.js": "/0.f391201ca51e9b3026f9.hot-update.js",
-    "/0.400e2680b112b5253093.hot-update.js": "/0.400e2680b112b5253093.hot-update.js",
-    "/0.ad6d53bf39dbc4ab6c38.hot-update.js": "/0.ad6d53bf39dbc4ab6c38.hot-update.js",
-    "/0.a9e10c9adc69e9edc5b6.hot-update.js": "/0.a9e10c9adc69e9edc5b6.hot-update.js",
-    "/0.999719fbea3e49553922.hot-update.js": "/0.999719fbea3e49553922.hot-update.js",
-    "/0.01f154589dbb28676897.hot-update.js": "/0.01f154589dbb28676897.hot-update.js",
-    "/0.31053b37e38c6b2ca69c.hot-update.js": "/0.31053b37e38c6b2ca69c.hot-update.js",
-    "/0.73e026b6385866295a5b.hot-update.js": "/0.73e026b6385866295a5b.hot-update.js",
-    "/0.02cb56ff595317496a12.hot-update.js": "/0.02cb56ff595317496a12.hot-update.js",
-    "/0.c2ee20d5e4581f591f29.hot-update.js": "/0.c2ee20d5e4581f591f29.hot-update.js",
-    "/0.6d9c4ce47239554a6852.hot-update.js": "/0.6d9c4ce47239554a6852.hot-update.js",
-    "/0.2ffb85fe3d87a673e4ba.hot-update.js": "/0.2ffb85fe3d87a673e4ba.hot-update.js",
-    "/0.793d4a497c95fd17cb87.hot-update.js": "/0.793d4a497c95fd17cb87.hot-update.js",
-    "/0.146d5ca6b7c3ba64e57e.hot-update.js": "/0.146d5ca6b7c3ba64e57e.hot-update.js",
-    "/0.1ac53d91fd801e8064ef.hot-update.js": "/0.1ac53d91fd801e8064ef.hot-update.js",
-    "/0.b4d7f4afcf0a36eb0b51.hot-update.js": "/0.b4d7f4afcf0a36eb0b51.hot-update.js",
-    "/0.a30108e2462f0a251d0e.hot-update.js": "/0.a30108e2462f0a251d0e.hot-update.js",
-    "/0.418e1fab2fd299d9913f.hot-update.js": "/0.418e1fab2fd299d9913f.hot-update.js",
-    "/0.816ed4f2856726c92c77.hot-update.js": "/0.816ed4f2856726c92c77.hot-update.js",
-    "/0.714b505d22d8c5131069.hot-update.js": "/0.714b505d22d8c5131069.hot-update.js",
-    "/0.7529c551ffea8b0f18c6.hot-update.js": "/0.7529c551ffea8b0f18c6.hot-update.js",
-    "/0.fc1a367c220b62af5b87.hot-update.js": "/0.fc1a367c220b62af5b87.hot-update.js",
-    "/0.2792863105e9d5f622f4.hot-update.js": "/0.2792863105e9d5f622f4.hot-update.js",
-    "/0.e2d652bae36ff7a60985.hot-update.js": "/0.e2d652bae36ff7a60985.hot-update.js",
-    "/0.d2c2720f5f05deff1fd3.hot-update.js": "/0.d2c2720f5f05deff1fd3.hot-update.js",
-    "/0.d1620a8a79998632330f.hot-update.js": "/0.d1620a8a79998632330f.hot-update.js"
-=======
-    "/css/app.css": "/css/app.css"
->>>>>>> 367b7d31960819ca44fcbe19c8218c029a817dfb
-=======
     "/css/app.css": "/css/app.css",
     "/css/home.css": "/css/home.css",
     "/js/all.js": "/js/all.js"
->>>>>>> f8b9a20d17e226a1f9bb5a4cabf02fe29795e6b5
 }
