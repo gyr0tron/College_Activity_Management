@@ -6,7 +6,7 @@ export default new VueRouter({
     {
       path: '/dashboard',
       name: 'dashboard',
-      component: require('./components/Dashboard/Dashboard.vue')
+      component: require('./components/Dashboard')
     },
   ],
   mode: 'history'
