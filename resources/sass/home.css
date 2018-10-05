@@ -1,7 +1,1254 @@
-#gradient
-{
-  width: 100%;
-  height: 800px;
-  padding: 0px;
-  margin: 0px;
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,200,400,600');
+@import url('https://daneden.github.io/animate.css/animate.min.css');
+@import url('http://mynameismatthieu.com/WOW/css/libs/animate.css');
+
+/* Sticky footer styles
+-------------------------------------------------- */
+
+html,
+body {
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+  background-color: #444;
+  font-family: raleway;
+  
 }
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by its height */
+  margin: 0 auto -60px;
+  /* Pad bottom by footer height */
+  padding: 0 0 60px;
+  
+}
+
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+#wrap > .container {
+  padding: 60px 15px 0;
+  
+}
+
+.container .credit {
+  margin: 20px 0;
+  
+}
+
+#footer > .container {
+  padding-left: 15px;
+  padding-right: 15px;
+  
+}
+
+code {
+  font-size: 80%;
+  
+}
+
+
+
+::selection {
+	background: #ffd800; /* Safari */
+	}
+::-moz-selection {
+	background: #ffd800; /* Firefox */
+}
+
+.slide {
+	width: 100%;
+}
+
+.slide .slide-description
+{
+  margin-bottom: 60px;
+  
+}
+.slide .slide-description p
+{
+  width: 65%;
+font-weight: 400;
+  
+}
+
+
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+
+
+#home{
+  background: url(http://d.share.pho.to/649298f5_o.jpeg) 50% no-repeat fixed;
+  color: white;
+  padding: 0;
+  margin: 0 auto;
+  margin-top: -90px;
+  display: block;
+  
+  -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;
+  
+  height: 100%;
+  min-height: 900px;
+  
+}
+
+    #home .wrapper{
+        background: url(http://d.share.pho.to/3766b8b7_o.png) 50% 0 repeat-x fixed;
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+      height: 100%;
+      
+}
+
+#home .container
+{
+  height: 100%;
+  
+}
+
+#home .container-valign-wrapper
+{
+  display: table;
+  width: 100%;
+  height: 100%;
+  
+}
+
+#home .container-valign
+{
+  display: table-cell;
+  vertical-align: middle;
+  margin: auto;
+  width: 100%;
+  
+}
+      #home h2
+      {
+        text-align: center;
+        font-weight: 100;
+        
+      }
+
+      #home .row
+      {
+        overflow: hidden;
+        margin-top: 50px;
+        margin-left: 0px;
+        margin-right: 0px;
+
+      }
+
+      #home .col-md-3,
+      #home .col-sm-3,
+      #home .col-xs-12
+      {
+        margin-bottom: 50px;
+        
+      }
+
+      #home .row .stats-container
+      {
+        background: url(http://i.share.pho.to/b3f71754_o.png) no-repeat 0px center;
+        padding-left: 40px;
+        box-sizing: border-box;
+        display: inline-block;
+        text-align: left;
+        height: 100px;
+        font-weight: 100;
+        width: 100%;
+        font-size: 18px;
+        
+        
+      }
+
+      #home .row .stats-container .subject
+      {
+        font-weight: bold;
+        display: block;
+        font-size: 12px;
+
+      }
+
+      #home .row .stats-container .number
+      {
+        color: #ffd800;
+        display: block;
+        font-weight: 100;
+        
+      }
+
+
+      #home a#join-today
+      {
+        display: inline-block;
+        width: 290px;
+        margin-top: 20px;
+        font-size: 20px;
+        color: #5a2f3f ;
+        background-color: #ffd800;
+        border-bottom: 3px solid #826e00 ;
+        padding: 20px 30px;
+        font-weight: 600;
+        
+        
+      }
+
+      #home a#join-today:hover
+      {
+        text-decoration: none;
+
+      }
+
+      #home ul
+      {
+        list-style-type: none;
+
+      }
+
+      #home ul li
+      {
+        color: #fff;
+        font-size: 14px;
+        margin-bottom: 20px;
+        padding-left: 30px;
+        background: url(http://i.share.pho.to/f7b7b931_o.png) left center no-repeat;
+        font-weight: lighter;
+        text-align: left;
+        
+      }
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+
+#advertisers-publishers{
+  background: url(http://i.share.pho.to/f3ae7543_o.jpeg) 50% -100px  no-repeat fixed;
+  color: #5a2f3f;
+  margin: 0 auto;
+  padding: 0;
+  display: block;
+  
+  -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;
+  
+}
+      #advertisers-publishers .container
+      {
+        height: 100%;
+
+      }
+
+      #advertisers-publishers .container-valign-wrapper
+      {
+        display: table;
+        width: 100%;
+        height: 100%;
+
+      }
+
+      #advertisers-publishers .container-valign
+      {
+        display: table-cell;
+        vertical-align: middle;
+        margin: auto;
+        width: 100%;
+        
+      }
+
+      #advertisers-publishers h2
+      {
+        margin-bottom: 30px;
+        padding-top: 60px;
+        font-weight: 200;
+        
+      }
+
+      #advertisers-publishers .publishers-icon
+      {
+        background: url(http://i.share.pho.to/a47d4219_o.png) no-repeat center top;
+
+      }
+      
+      #advertisers-publishers .advertisers-icon
+      {
+        background: url(http://i.share.pho.to/5941e74d_o.png) no-repeat center top;
+
+      }
+
+      #advertisers-publishers p
+      {
+        width: 70%;
+        margin-left: 15%;
+        
+      }
+      
+      #advertisers-publishers a#signup
+      {
+        display: inline-block;
+        width: 150px;
+        margin-top: 20px;
+        font-size: 18px;
+        color: #fff;
+        background-color: #5a2f3f;
+        border-bottom: 3px solid #321a23;
+        padding: 10px 15px;
+        font-weight: 600;
+        
+      }
+
+      #advertisers-publishers a#signup:hover
+      {
+        text-decoration: none;
+
+      }
+
+      /*
+      #second .bg{
+        background: url(http://i.share.pho.to/3766b8b7_o.png) 50% 0 no-repeat fixed;
+        height: 1300px;
+        margin: 0 auto;
+        padding: 0;
+        position: absolute;
+        width: 900px;
+        z-index: 200;
+      }
+      */
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+
+#features
+{
+  color: #dcdcdc;
+  padding: 0;
+  margin: 0;
+  display: block;
+  background: #313439;
+  
+}
+      #features .container
+      {
+        height: 100%;
+
+      }
+
+      #features .container-valign-wrapper
+      {
+        display: table;
+        width: 100%;
+        height: 100%;
+
+      }
+
+      #features .container-valign
+      {
+        display: table-cell;
+        vertical-align: middle;
+        margin: auto;
+        width: 100%;
+        
+      }
+
+
+      #features .wrapper{
+        background: url(http://i.share.pho.to/09ff632f_o.png) center center no-repeat fixed;
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+      
+      height: 100%;
+      
+}
+      #features .photo
+      {
+        text-align: center;
+
+      }
+
+      #features .equal-height
+      {
+        height: 166px;
+        margin-bottom: 50px;
+        font-weight: 400;
+        
+      }
+
+      #features .row
+      {
+        margin-bottom: 30px;
+
+      }
+
+      #features h2
+      {
+        margin-bottom: 30px;
+        background: url(http://i.share.pho.to/168966fa_o.png) no-repeat center top;
+        padding-top: 60px;
+        font-weight: 200;
+
+      }
+
+      #features h3
+      {
+        font-weight: 200;
+
+      }
+
+
+      #features a#signup
+        {
+          display: inline-block;
+          width: 250px;
+          margin-top: 20px;
+          font-size: 25px;
+          color: #5a2f3f ;
+          background-color: #ffd800;
+          border-bottom: 3px solid #826e00 ;
+          padding: 10px 30px;
+          font-weight: 600;
+          
+        }
+
+        #features a#signup:hover
+        {
+          text-decoration: none;
+
+        }
+
+      #features a#signup span
+      {
+        font-size: 16px;
+        display: block;
+        font-weight: 400;
+        
+      }
+
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+
+#tools
+{
+  background: #efebec;
+	margin: 0;
+	padding: 0;
+  display: block;
+  color: #5a2f3f;
+  
+}
+      #tools .container
+      {
+        height: 100%;
+
+      }
+
+      #tools .container-valign-wrapper
+      {
+        display: table;
+        width: 100%;
+        height: 100%;
+
+      }
+
+      #tools .container-valign
+      {
+        display: table-cell;
+        vertical-align: middle;
+        margin: auto;
+        width: 100%;
+        
+      }
+
+
+      #tools h2
+      {
+        margin-bottom: 30px;
+        background: url(http://i.share.pho.to/ccd4a8c5_o.png) no-repeat center top;
+        padding-top: 60px;
+        font-weight: 200;
+        
+      }
+      #tools h3
+    {
+      margin-top: 0px;
+      margin-bottom: 10px;
+
+    }
+      #tools a#signup
+      {
+        display: inline-block;
+        width: 250px;
+        margin-top: 50px;
+        font-size: 25px;
+        color: #fff;
+        background-color: #5a2f3f;
+        border-bottom: 3px solid #321a23;
+        padding: 20px 30px;
+        font-weight: 600;
+          
+      }
+
+      #tools a#signup:hover
+      {
+        text-decoration: none;
+        
+      }
+
+      #tools .equal-height
+      {
+        height: 110px;
+        margin-bottom: 40px;
+        font-weight: 400;
+        
+      }
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+
+
+#testimonials
+{
+  background: #ccc url(http://i.share.pho.to/19ea6fc1_o.jpeg) repeat 50% -300px;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  border-bottom: 3px solid #edc903;
+  display: block;
+  
+  
+}
+      #testimonials .container
+      {
+        height: 100%;
+        
+      }
+
+      #testimonials .container-valign-wrapper
+      {
+        display: table;
+        width: 100%;
+        height: 100%;
+
+      }
+
+      #testimonials .container-valign
+      {
+        display: table-cell;
+        vertical-align: middle;
+        margin: auto;
+        width: 100%;
+        
+      }
+
+      #testimonials h2
+      {
+        margin-bottom: 60px;
+        background: url(http://i.share.pho.to/3c7b4a3f_o.png) no-repeat center top;
+        margin-top: -100px;
+        padding-top: 60px;
+        
+        font-weight: 200;
+      }
+      #testimonials h3
+      {
+        font-size: 18px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+
+      }
+
+    #testimonials .equal-height
+      {
+        height: 150px;
+        margin-bottom: 50px;
+        font-weight: 200;
+        
+      }
+      
+      #testimonials .col-xs-12, #testimonials .col-sm-12
+      {
+        text-align: center;
+        
+      }
+
+#contacts{
+	background: #000 url(http://i.share.pho.to/74c4b410_o.jpeg) no-repeat 50% -400px ;
+	margin: 0;
+	padding: 0;
+  color: #fff;
+  display: block;
+  
+  -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;
+  
+}
+      #contacts .wrapper{
+        background: url(http://i.share.pho.to/ab02bf3c_o.png) 50% 0 repeat-x fixed;
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+      
+      height: 100%;
+      
+}
+
+      #contacts input, #contacts textarea
+      {
+        background: none;
+        border-radius: 15px;
+        border: 1px solid #e9e9e9;
+        font-size: 16px;
+        width: 100%;
+        line-height: 30px;
+        color: #fff;
+        margin-bottom: 20px;
+        outline: none;
+        box-sizing: border-box;
+        padding: 5px;
+        padding-left: 20px;
+        padding-left: 20px;
+        
+        text-align: left;
+        font-weight: 400;
+        
+      }
+
+      #contacts input
+      {
+        height: 40px;
+        
+      }
+
+      #contacts textarea
+      {
+        height: 180px;
+        line-height: 30px;
+        
+        padding-top: 20px;
+        padding-bottom: 20px;
+        
+      }
+      
+#contacts input[type=submit]
+{
+  border: 0px;
+  border-bottom: 3px solid #826e00;
+  background-color: #ffd800;
+  width: 100px;
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  padding-left: 0px;
+  
+}
+
+
+      #contacts h2
+      {
+        font-weight: 200;
+        
+      }
+
+      #contacts h3
+      {
+        margin-top: 60px;
+        margin-bottom: 10px;
+        font-weight: 200;
+        
+      }
+
+#contacts .row
+{
+  margin-top: 200px;
+  
+}
+
+#contacts ul
+{
+  list-style-type: none;
+  padding-left: 0px; 
+  
+}
+#contacts ul li
+{
+  font-weight: 200;
+  font-size: 18px;
+  padding-left: 30px;
+  line-height: 25px;
+  
+}
+
+#contacts ul li:nth-child(1)
+{
+  background: url(http://d.share.pho.to/f0fe4843_o.png) no-repeat left 0px;
+  
+}
+
+#contacts ul li:nth-child(2)
+{
+  background: url(http://d.share.pho.to/f0fe4843_o.png) no-repeat left -25px;
+  
+}
+
+
+#contacts #copyright
+{
+  background: url(http://i.share.pho.to/3500ebc0_o.png) no-repeat left top;
+  box-sizing: border-box;
+  padding-top: 62px;
+  padding-left: 70px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #bbb;
+  display: block;
+  margin-top: 110px;
+  margin-left: 15px;
+  font-weight: 100;
+  
+}
+/*
+.story{
+	margin: 0 auto;
+	min-width: 980px;
+	overflow: auto;
+	width: 980px;
+}
+
+
+.story .float-left, .story .float-right{
+	padding: 100px 0 0 0;
+	position: relative;
+	width: 350px;	
+}
+*/
+
+
+
+
+
+
+#home { height: 1200px; }
+
+#advertisers-publishers { height: 700px; }
+
+#features { height: 1200px; }
+
+#tools { height: 1300px; }
+
+#testimonials { height: 520px; }
+
+#contacts { height: 1500px; }
+
+
+
+/* begin debugging parallax */
+
+/*
+#home { background-color: red; }
+
+#advertisers-publishers { background-color: blue; }
+
+#features { background-color: red; }
+
+#tools { background-color: blue; }
+
+#testimonials { background-color: red; }
+
+#contacts { background-color: blue; }
+*/
+
+
+/* end debugging parallax */
+
+/* ------------------------------------------------------- */
+
+/* ------------------------------------------------------- */
+
+/* ------------------------------------------------------- */
+
+
+@media (max-width: 768px)
+{
+  /*#home {  height: 1000px; }
+  #advertisers-publishers { height: 700px; }
+  #features { height: 1650px; }
+  #tools { height: 1200px; }
+  #testimonials { height: 980px; }
+  #contacts { height: 400px; }*/
+  
+  #home ul
+  {
+    padding-left: 0px;
+    
+  }
+  
+  #home ul li
+  {
+    font-size: 11px;
+    line-height: 20px;
+    height: 20px;
+  }
+  
+   #home .col-xs-12
+  {
+      text-align: center;
+    
+  }
+  
+  #home .row .stats-container .number
+  {
+    font-size: 25px;
+    line-height: 25px;
+    
+  }
+  
+  #home .row .stats-container
+  {
+    width: auto;
+    height: 70px;
+    
+  }
+  
+  #home .row .stats-container .subject
+  {
+    /*goes on second line */ /*height: 35px;*/
+    
+  }
+  
+  #home a#join-today
+  {
+    margin-top: 10px;
+    
+  }
+  
+  /* brand */
+  .navbar-default .navbar-brand, .navbar-default .navbar-brand:hover
+  {
+      height: 50px;
+      padding: 5px;
+      box-sizing: border-box;
+      background-color: #ffd800;
+      color: #191717;
+      font-size: 12px;
+      width: 75px;
+      
+    }
+  
+  .navbar-default .navbar-brand span{
+    font-size: 22px;
+      font-weight: 300;
+      
+    }
+  
+  /* remove border */
+  .navbar
+  {
+    border: 0px;
+    background-color: #ffd800;
+    border-bottom: 3px solid #826e00;
+    z-index: 10000;
+    
+  }
+  
+  /* collapsed menu button */
+  .navbar-default .navbar-toggle
+  {
+    border: 0px;
+    
+  }
+  
+  .navbar-default .navbar-collapse
+  {
+    border-color: #000;
+    
+  }
+  
+  .navbar-default .navbar-toggle .icon-bar
+  {
+    background-color: #000;
+    
+  }
+  
+  .navbar-default .navbar-toggle:hover,
+  .navbar-default .navbar-toggle:focus
+  {
+    background-color: transparent;
+    
+  }
+  
+  .navbar-default .navbar-nav>.active>a,
+  .navbar-default .navbar-nav>.active>a:hover,
+  .navbar-default .navbar-nav>.active>a:focus
+  {
+    background-color: #ffd800;
+    color: #000;
+    font-weight: bold;
+    
+  }
+  
+ 
+    #features img
+    {
+      width: 60px;
+      
+    }
+    
+    #features .equal-height
+    {
+      margin-bottom: 20px;
+      height: 120px;
+    }
+  
+  
+  #advertisers-publishers p
+      {
+        width: 80%;
+        margin-left: 10%;
+        
+      }
+  
+  
+  #testimonials h3
+  {
+    font-size: 16px;
+    
+  }
+  #testimonials .equal-height
+  {
+    margin-bottom: 20px;
+    font-size: 12px;
+    
+  }
+  
+  .affix
+  {
+    background-color: #ffd800;
+    width: 100%;
+    z-index: 10000;
+    margin-top: 90px;
+    
+    
+  }
+  
+  
+  #testimonials h2
+  {
+    margin-top: 0;
+    
+  }
+  
+  #testimonials .equal-height
+      {
+        height: 80px;
+         
+      }
+  
+  
+  #contacts ul li
+  {
+    font-size: 12px;
+    
+  }
+  
+  #contacts h3
+  {
+    font-size: 18px;
+    
+  }
+} /* @media (max-width: 768px) */
+
+
+
+
+/* ------------------------------------------------------------- */
+/* ------------------------------------------------------------- */
+/* ------------------------------------------------------------- */
+
+
+@media (min-width: 768px)
+{
+  /*#home { height: 950px; }
+  #advertisers-publishers { height: 1000px; }
+  #features { height: 1400px; }
+  #tools { height: 1200px; }
+  #testimonials { height: 980px; }
+  #contacts { height: 400px; }*/
+  
+  #home h2
+  {
+    font-size: 55px;
+    margin-top: 150px;
+    
+  }
+  
+  #home .stats-container
+  {
+    height: 75px;
+    
+  }
+  
+  #home .stats-container .number
+  {
+    font-size: 35px;
+    line-height: 35px;
+    
+  }
+  
+  /* navbar transparent */
+  .navbar-default
+  {
+    background-color: transparent;
+    border: 0px;
+    
+  }
+
+
+  /* brand */
+  .navbar-default .navbar-brand, .navbar-default .navbar-brand:hover{
+      height: 90px;
+      padding: 5px;
+      padding-top: 45px;
+      box-sizing: border-box;
+      background-color: #ffd800;
+      color: #191717;
+      font-size: 12px;
+      width: 75px;
+      border-bottom: 2px solid #826e00;
+      
+    }
+
+  .navbar-default .navbar-brand span{
+      font-size: 22px;
+      font-weight: bold;
+      
+    }
+  
+  /* navbar buttons */
+  .navbar-default .navbar-nav>li>a, 
+  .navbar-default .navbar-nav>li>a:hover, 
+  .navbar-default .navbar-nav>li>a:focus
+  {
+    background-color: transparent;
+    color: #fff;
+    font-weight: 200;
+    
+    line-height: 60px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+  }
+
+  /* navbar ACTIVE buttons */
+  .navbar-default .navbar-nav>.active>a, 
+  .navbar-default .navbar-nav>.active>a:hover, 
+  .navbar-default .navbar-nav>.active>a:focus
+  {
+    background-color: transparent;
+    color: #ffd800;
+    font-weight: 600;
+    
+  }
+  
+  /* navbar ACTIVE buttons UNDERLINE */
+  .navbar-default .navbar-nav>.active>a:after
+  {
+      content: '';
+
+      width: 100%;
+      position: absolute;
+      left: 0px;
+      bottom: 25px;
+
+      border-width: 0 0 3px;
+      border-style: solid;
+      
+  }
+
+
+  /* remove navbar bottom margin */
+  .navbar
+  {
+    margin-bottom: 0px;
+    z-index: 10000;
+    width: 100%;
+    
+    
+  }
+  
+  .navbar-default .navbar-collapse
+  {
+    float: right;
+    
+  }
+  
+  .navbar .container
+  {
+    padding-left: 30px;
+    padding-right: 30px;
+    
+    
+  }
+  .affix
+  {
+    background-color: #ffd800;
+    width: 100%;
+    margin-top: 90px;
+    
+    
+  }
+  
+  .affix .navbar-nav>li>a,
+  .affix .navbar-nav>li>a:hover,
+  .affix .navbar-nav>li>a:focus
+  {
+    line-height: 20px;
+    color: #000;
+    
+  }
+  
+  .affix .navbar-nav>.active>a,
+  .affix .navbar-nav>.active>a:hover,
+  .affix .navbar-nav>.active>a:focus
+  {
+    line-height: 20px;
+    color: #fff;
+    
+  }
+  
+  .affix .navbar-brand,
+  .affix .navbar-brand:hover
+  {
+      height: 45px;
+      padding: 5px;
+      box-sizing: border-box;
+      background-color: #ffd800;
+      color: #191717;
+      font-size: 12px;
+      width: 75px;
+      border: 0px;
+      
+  }
+  
+  .affix .navbar-nav>.active>a:after
+  {
+    display: none;
+    
+  }
+  
+  
+  
+  #testimonials .equal-height
+  {
+    margin-bottom: 10px;
+    font-size: 12px;
+    
+  }
+  
+  
+}
+
+
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+
+@media (min-width: 768px) AND (max-width: 992px)
+  {
+    /*
+    #features img
+    {
+      width: 60px;
+      
+    }
+    
+    #features .equal-height
+    {
+      margin-bottom: 20px;
+      height: 120px;
+    }
+    */
+    
+    
+    #home .stats-container
+  {
+    height: 70px;
+    
+  }
+    
+    
+    #home .stats-container .number
+  {
+    font-size: 25px;
+    line-height: 30px;
+    
+  }
+  }
+
+
+
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+
+
+
+@media (min-width: 992px)
+{
+  #home .stats-container .number
+  {
+    font-size: 40px;
+    line-height: 45px;
+    
+  }
+  
+  #home .stats-container
+  {
+    height: 70px;
+    
+  }
+  
+}
+
+
+
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+
+
+
+@media (min-width: 1200px)
+{
+  #home .stats-container .number
+  {
+    font-size: 50px;
+    
+  }
+  
+  #home h2
+  {
+    font-size: 70px;
+    
+  }
+}
+
+
+
