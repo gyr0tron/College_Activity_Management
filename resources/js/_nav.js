@@ -25,7 +25,7 @@ export default {
     },
     {
       name: 'Typography',
-      url: '/theme/typography',
+      url: '/calendar',
       icon: 'icon-pencil'
     },
     {
