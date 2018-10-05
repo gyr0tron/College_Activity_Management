@@ -15,5 +15,8 @@ Route::get('/', 'HomeController@getHome');
 
 // Web Api
 Route::prefix('api/v1')->group(function () {
+  // User
+  Route::get('/user/info','api\UserController@getInfo');
+  // College
   Route::post('/colleges/add','api\CollegeApiController@postAdd');
 });
