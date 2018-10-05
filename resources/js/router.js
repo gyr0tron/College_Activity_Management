@@ -7,7 +7,11 @@ export default new VueRouter({
       path: '/dashboard',
       name: 'dashboard',
       component: require('./components/Layout')
-    },
+    },{
+      path: '/calendar',
+      name: 'calendar',
+      component: require('./components/Calendar')
+    }
   ],
   mode: 'history'
 })
