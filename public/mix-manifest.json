@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "/js/app.js": "/js/app.js",
 <<<<<<< HEAD
     "/css/app.css": "/css/app.css",
@@ -37,4 +38,9 @@
 =======
     "/css/app.css": "/css/app.css"
 >>>>>>> 367b7d31960819ca44fcbe19c8218c029a817dfb
+=======
+    "/css/app.css": "/css/app.css",
+    "/css/home.css": "/css/home.css",
+    "/js/all.js": "/js/all.js"
+>>>>>>> f8b9a20d17e226a1f9bb5a4cabf02fe29795e6b5
 }

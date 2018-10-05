@@ -1,82 +1,210 @@
-const signupButton = document.getElementById('signup-button'),
-  loginButton = document.getElementById('login-button'),
-  userForms = document.getElementById('user_options-forms')
-
-/**
- * Add event listener to the "Sign Up" button
- */
-signupButton.addEventListener('click', () => {
-  userForms.classList.remove('bounceRight')
-  userForms.classList.add('bounceLeft')
-}, false)
-
-/**
- * Add event listener to the "Login" button
- */
-loginButton.addEventListener('click', () => {
-  userForms.classList.remove('bounceLeft')
-  userForms.classList.add('bounceRight')
-}, false)
-
-
-var colors = new Array(
-  [45, 128, 75],
-  [56, 231, 129],
-  [84, 251, 175],
-  [103, 245, 215],
-  [121, 238, 242],
-  [159, 228, 224],
-  [126, 239, 236]);
-
-var step = 0;
-//color table indices for: 
-// current color left
-// next color left
-// current color right
-// next color right
-var colorIndices = [0, 1, 2, 3];
-
-//transition speed
-var gradientSpeed = 0.002;
-
-function updateGradient() {
-
-  if ($ === undefined) return;
-
-  var c0_0 = colors[colorIndices[0]];
-  var c0_1 = colors[colorIndices[1]];
-  var c1_0 = colors[colorIndices[2]];
-  var c1_1 = colors[colorIndices[3]];
-
-  var istep = 1 - step;
-  var r1 = Math.round(istep * c0_0[0] + step * c0_1[0]);
-  var g1 = Math.round(istep * c0_0[1] + step * c0_1[1]);
-  var b1 = Math.round(istep * c0_0[2] + step * c0_1[2]);
-  var color1 = "rgb(" + r1 + "," + g1 + "," + b1 + ")";
-
-  var r2 = Math.round(istep * c1_0[0] + step * c1_1[0]);
-  var g2 = Math.round(istep * c1_0[1] + step * c1_1[1]);
-  var b2 = Math.round(istep * c1_0[2] + step * c1_1[2]);
-  var color2 = "rgb(" + r2 + "," + g2 + "," + b2 + ")";
-
-  $('#gradient').css({
-    background: "-webkit-gradient(linear, left top, right top, from(" + color1 + "), to(" + color2 + "))"
-  }).css({
-    background: "-moz-linear-gradient(left, " + color1 + " 0%, " + color2 + " 100%)"
-  });
-
-  step += gradientSpeed;
-  if (step >= 1) {
-    step %= 1;
-    colorIndices[0] = colorIndices[1];
-    colorIndices[2] = colorIndices[3];
-
-    //pick two new target color indices
-    //do not pick the same as the current one
-    colorIndices[1] = (colorIndices[1] + Math.floor(1 + Math.random() * (colors.length - 1))) % colors.length;
-    colorIndices[3] = (colorIndices[3] + Math.floor(1 + Math.random() * (colors.length - 1))) % colors.length;
-
+function addCommas(str) {
+  /*
+  var s = (str + ""), len = s.length, i = 0, output = "";
+  while(i < len - 1)
+  {
+    output = output + s.charAt(i);
+    i++;
   }
+  
+  return output + "." + s.charAt(len - 1);
+  
+  
+  
+  
+  
+  
+  var parts = (str + "").split("."),
+        main = parts[0],
+        len = main.length,
+        output = "",
+        i = len - 1;
+
+    while(i >= 0)
+    {
+        output = main.charAt(i) + output;
+        if ((len - i) % 3 === 0 && i > 0) {
+            output = "," + output;
+        }
+        --i;
+        
+    }
+    // put decimal part back
+    if (parts.length > 1) {
+        output += "." + parts[1];
+      
+    }
+  
+    return output;
+  */
+  var s = (str + ""), len = s.length, i = 0, output = "";
+  while (i < len - 1) {
+    output = output + s.charAt(i);
+    i++;
+  }
+
+  return output + "." + s.charAt(len - 1);
+
+
 }
 
-setInterval(updateGradient, 10);
+(function ($) {
+  $.fn.countTo = function (options) {
+    // merge the default plugin settings with the custom options
+    options = $.extend({}, $.fn.countTo.defaults, options || {});
+
+    // how many times to update the value, and how much to increment the value on each update
+    var loops = Math.ceil(options.speed / options.refreshInterval),
+      increment = (options.to - options.from) / loops;
+
+    return $(this).each(function () {
+      var _this = this,
+        loopCount = 0,
+        value = options.from,
+        interval = setInterval(updateTimer, options.refreshInterval);
+
+      function updateTimer() {
+        value += increment;
+        loopCount++;
+        $(_this).html(addCommas(value.toFixed(options.decimals)) + ' M');
+
+        if (typeof (options.onUpdate) == 'function') {
+          options.onUpdate.call(_this, value);
+        }
+
+        if (loopCount >= loops) {
+          clearInterval(interval);
+          value = options.to;
+
+          if (typeof (options.onComplete) == 'function') {
+            options.onComplete.call(_this, value);
+          }
+        }
+      }
+    });
+  };
+
+  $.fn.countTo.defaults = {
+    from: 0,  // the number the element should start at
+    to: 100,  // the number the element should end at
+    speed: 1000,  // how long it should take to count between the target numbers
+    refreshInterval: 100,  // how often the element should be updated
+    decimals: 0,  // the number of decimal places to show
+    onUpdate: null,  // callback method for every time the element is updated,
+    onComplete: null,  // callback method for when the element finishes updating
+  };
+})(jQuery);
+
+
+$(document).ready(function () {
+
+  //first page always the height of viewport
+  $('#home').height($(window).height());
+  $(window).resize(function () {
+    //on resize too
+    $('#home').height($(window).height());
+  });
+
+  //smooth scrolling event
+  $('a[href^="#"]').on('click', function (e) {
+    e.preventDefault();
+
+    //smooth scroll to location
+    var target = this.hash,
+      $target = $(target);
+
+    $('html, body').stop().animate({
+      'scrollTop': $target.offset().top + 40
+    }, 600, 'swing', function () {
+      window.location.hash = target;
+    });
+
+  });
+
+  //close on click in expanded menu
+  $(document).on('click', '.navbar-collapse.in', function (e) {
+    if ($(e.target).is('a')) {
+      $(this).collapse('hide');
+    }
+  });
+
+  //$('#nav').localScroll(800);
+
+  //RepositionNav();
+
+  //$(window).resize(function(){
+  //RepositionNav();
+  //});	
+
+  //.parallax(xPosition, adjuster, inertia, outerHeight) options:
+  //xPosition - Horizontal position of the element
+  //adjuster - y position to start from
+  //inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
+  //outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
+
+
+  //$('#home').parallax("50%", 0, 0, true);
+
+
+  $('#advertisers-publishers').parallax("50%", $('#home').height() + 500, 0.5, true);
+  //$('#features').parallax("50%", 1680, 0.1, true);
+  //$('#tools').parallax("50%", 2880, 0.1, true);
+  //$('.bg').parallax("50%", 2500, 0.4, true);
+  $('#testimonials').parallax("50%", $('#home').height() + $('#features').height() + $('#tools').height(), 0.3, true);
+  $('#contacts').parallax("50%", $('#home').height() + $('#features').height() + $('#tools').height() + $('#testimonials').height() + 500, 0.3, true);
+
+
+
+  new WOW().init();
+
+  $('#stats1').countTo({
+    from: 50,
+    to: 2854,
+    speed: 1500,
+    refreshInterval: 30,
+    onComplete: function (value) {
+      console.debug(this);
+    }
+  });
+  $('#stats2').countTo({
+    from: 50,
+    to: 957,
+    speed: 1500,
+    refreshInterval: 30,
+    onComplete: function (value) {
+      console.debug(this);
+    }
+  });
+  $('#stats3').countTo({
+    from: 50,
+    to: 748,
+    speed: 1500,
+    refreshInterval: 30,
+    onComplete: function (value) {
+      console.debug(this);
+    }
+  });
+  $('#stats4').countTo({
+    from: 50,
+    to: 1274,
+    speed: 1500,
+    refreshInterval: 30,
+    onComplete: function (value) {
+      console.debug(this);
+    }
+  });
+
+
+
+
+  smoothScroll.init({
+    speed: 1000,
+    easing: 'easeInOutCubic',
+    offset: 0,
+    updateURL: false,
+    callbackBefore: function (toggle, anchor) { },
+    callbackAfter: function (toggle, anchor) { }
+  });
+
+
+})

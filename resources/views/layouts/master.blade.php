@@ -9,7 +9,7 @@
   <title>{{ $title or config('app.name') }}</title>
   @yield('css')
 </head>
-<body>
+<body data-spy="scroll" data-target="#myNav" data-offset="50">
   <div id="app">
     @yield('content')
   </div>
