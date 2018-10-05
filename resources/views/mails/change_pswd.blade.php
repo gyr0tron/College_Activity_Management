@@ -34,12 +34,12 @@
 	<td background="images/greenback.gif" width="31" bgcolor="#45a853" style="border-top:1px solid #FFF; border-bottom:1px solid #FFF;" height="113">
 	<div style="line-height: 0px; font-size: 1px; position: absolute;">&nbsp;</div>
 	</td>
-	
+
 	<!--WHITE TEXT AREA-->
 	<td width="131" bgcolor="#FFFFFF" style="border-top:1px solid #FFF; text-align:center;" height="113" valign="middle">
 	<span style="font-size:25px; font-family:Trebuchet MS, Verdana, Arial; color:#2e8a3b;">Success!</span>
 	</td>
-	
+
 	<!--GREEN TEXT AREA-->
 	<td background="images/greenback.gif" bgcolor="#45a853" style="border-top:1px solid #FFF; border-bottom:1px solid #FFF; padding-left:15px;" height="113">
 	<span style="color:#FFFFFF; font-size:18px; font-family:Trebuchet MS, Verdana, Arial;">Your Account was created!</span>
@@ -72,13 +72,13 @@
 	<br />
 	<p>Your account was successfully created, you can click the following link to set-up a new password:</p>
 
-	<p>Please click <a href="[YOUR WEBSITE ADDRESS]">return to my website</a> to set up a new password.</p>
+	<p>Please click <a href='{{route('set_password')."?token=$pr->token"}}'>return to my website</a> to set up a new password.</p>
 
    Best Regards,<br/>
    [NAME]<br/>
    <br/>
 
-   This welcome email was sent to [email] because your account was recently created at [website_url].
+   This welcome email was sent to {{$user->email}} because your account was recently created at {{url()}}.
 
 	</td>
 </tr>
