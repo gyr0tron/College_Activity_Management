@@ -60,20 +60,20 @@
 /******/ 	__webpack_require__.p = "/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 45);
+/******/ 	return __webpack_require__(__webpack_require__.s = 44);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 45:
+/***/ 44:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(46);
+module.exports = __webpack_require__(45);
 
 
 /***/ }),
 
-/***/ 46:
+/***/ 45:
 /***/ (function(module, exports) {
 
 var signupButton = document.getElementById('signup-button'),
@@ -96,7 +96,7 @@ loginButton.addEventListener('click', function () {
   userForms.classList.add('bounceRight');
 }, false);
 
-var colors = new Array([45, 128, 75], [56, 231, 129], [84, 251, 175], [103, 245, 215], [121, 238, 242], [159, 228, 224]);
+var colors = new Array([45, 128, 75], [56, 231, 129], [84, 251, 175], [103, 245, 215], [121, 238, 242], [159, 228, 224], [126, 239, 236]);
 
 var step = 0;
 //color table indices for: 
