@@ -23,4 +23,8 @@ class UserApiController extends Controller
     if(Auth::user()->role < $role) abort(401);
     return User::where('role', $role)->get();
   }
+
+  public function postAdd(Request $request) {
+  
+  }
 }
