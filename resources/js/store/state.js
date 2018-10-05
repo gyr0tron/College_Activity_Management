@@ -1,5 +1,7 @@
 const state = {
-    user: {}
+    user: {
+        isAdmin: true // Dev
+    },
 }
 
 export default state;

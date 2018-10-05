@@ -20,7 +20,15 @@ window.Vue = require('vue');
 // Vue Router
 import router from './router';
 
+// Vue Store
+import store from './store';
+
+// Element UI
+import Element from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css'
+Vue.use(Element);
 const app = new Vue({
     el: '#app',
-    router: router,
+    router,
+    store
 });

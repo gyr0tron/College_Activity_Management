@@ -10,7 +10,7 @@ Vue.use(VueX)
 const store = new VueX.Store({
     state,
     getters,
-    ...modules
+    modules
 })
 
 export default store;
