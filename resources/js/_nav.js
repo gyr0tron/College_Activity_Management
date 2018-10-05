@@ -24,9 +24,9 @@ export default {
       icon: 'icon-drop'
     },
     {
-      name: 'Typography',
+      name: 'Calendar',
       url: '/calendar',
-      icon: 'icon-pencil'
+      icon: 'fa fa-calendar'
     },
     {
       title: true,

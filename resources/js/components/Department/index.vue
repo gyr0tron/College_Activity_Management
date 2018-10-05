@@ -1,6 +1,7 @@
 <template>
     <div class="container">
-        <b-card>
+        <b-card >
+          <h2 class="card-title"> Departments </h2>
             <b-form-group>
                 <b-row class="d-flex justify-content-center">
                     <b-col md='8'>
@@ -25,28 +26,28 @@ export default {
       },
       tableItems: [
         {
-          name: "Jeff",
+          name: "Department 1",
           location: "New Jersey",
           id: 1
         },
         {
-          name: "Jeff",
-          location: "New Jersey",
+          name: "Department 2",
+          location: "Mexico",
           id: 2
         },
         {
-          name: "Jeff",
+          name: "Department 3",
           location: "New Jersey",
           id: 3
         },
         {
-          name: "Jeff",
-          location: "New Jersey",
+          name: "Department 4",
+          location: "Mumbai",
           id: 4
         },
         {
-          name: "Jeff",
-          location: "New Jersey",
+          name: "Department 5",
+          location: "Taiwan",
           id: 5
         }
       ]

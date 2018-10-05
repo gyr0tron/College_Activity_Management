@@ -9,14 +9,14 @@
 @section('content')
   <section class="header">
     <div class="brand-box">
-      <span class="brand">Example Brand</span>
+      <span class="brand">Studentify</span>
     </div>
     <div class="text-box">
       <h1 class="heading-primary">
-        <span class="heading-primary-main reveal">Heading Primary </span>
-        <span class="heading-primary-sub reveal">The secondary heading</span>
+        <span class="heading-primary-main reveal">Studentify</span>
+        <span class="heading-primary-sub reveal">Built for students, by students</span>
       </h1>
-      <a href="#" class="btn btn-white btn-animated reveal">GET STARTED</a>
+      <a href="/login" class="btn btn-white btn-animated reveal px-5">Login</a>
     </div>
   </section>
 @endsection

@@ -6,7 +6,7 @@ export default new VueRouter({
     {
       path: '/dashboard',
       name: 'dashboard',
-      component: require('./components/Layout')
+      component: require('./components/Dashboard')
     },{
       path: '/calendar',
       name: 'calendar',
