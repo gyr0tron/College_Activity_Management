@@ -13,5 +13,5 @@ export default new VueRouter({
 })
 
 window.route = function(url) {
-  return '/api'+url;
+  return '/api/v1/'+url;
 }
