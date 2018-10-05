@@ -1,4 +1,10 @@
 <?php
+/*
+0- Web Admin
+1- College Admin
+2- Staff
+3- Student
+*/
 
 namespace App;
 
@@ -27,4 +33,18 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    // Roles
+    public function isWebAdmin() {
+      return $this->role == '0';
+    }
+    public function isCollegeAdmin() {
+      return $this->role == '1';
+    }
+    public function isStaff() {
+      return $this->role == '2';
+    }
+    public function isStudent() {
+      return $this->role == '3';
+    }
 }
