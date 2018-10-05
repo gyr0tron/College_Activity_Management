@@ -27,4 +27,6 @@ Route::prefix('api/v1')->group(function () {
   Route::get('/users/add','api\UserController@postAdd');
   // College
   Route::post('/colleges/add','api\CollegeApiController@postAdd');
+  // Department
+  Route::post('/departments/add','api\DepartmentApiController@postAdd');
 });
