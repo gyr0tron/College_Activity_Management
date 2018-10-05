@@ -11,6 +11,11 @@ export default new VueRouter({
       path: '/calendar',
       name: 'calendar',
       component: require('./components/Calendar')
+    },
+    {
+      path: '/department',
+      name: 'department',
+      component: require('./components/Department')
     }
   ],
   mode: 'history'

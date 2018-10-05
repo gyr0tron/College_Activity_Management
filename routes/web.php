@@ -23,6 +23,9 @@ Route::get('/dashboard', 'DashboardController@get');
 // Calendar Route
 Route::get('/calendar', 'DashboardController@get');
 
+// Department Routes
+Route::get('/department', 'DashboardController@get');
+
 // Web Api
 Route::prefix('api/v1')->group(function () {
   // User
