@@ -12,3 +12,8 @@
 */
 
 Route::get('/', 'HomeController@getHome');
+
+// Web Api
+Route::prefix('api/v1')->group(function () {
+  Route::post('/colleges/add','api\CollegeApiController@postAdd');
+});
