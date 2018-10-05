@@ -96,7 +96,7 @@ loginButton.addEventListener('click', function () {
   userForms.classList.add('bounceRight');
 }, false);
 
-var colors = new Array([45, 128, 75], [56, 231, 129], [84, 251, 175], [103, 245, 215], [121, 238, 242], [159, 228, 224]);
+var colors = new Array([45, 128, 75], [56, 231, 129], [84, 251, 175], [103, 245, 215], [121, 238, 242], [159, 228, 224], [126, 239, 236]);
 
 var step = 0;
 //color table indices for: 
