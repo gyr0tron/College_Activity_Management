@@ -20,6 +20,8 @@ Route::get('/password', 'HomeController@getHome')->name("set_password");
 // Dashboard
 Route::get('/dashboard', 'DashboardController@get');
 
+// Calendar Route
+Route::get('/calendar', 'DashboardController@get');
 
 // Web Api
 Route::prefix('api/v1')->group(function () {
