@@ -20,4 +20,9 @@ class DepartmentApiController extends Controller
     $department->save();
     return ResponseBuilder::send(true, '', '');
   }
+
+  public function getList(Request $request) {
+    $departments = Department::where('college', $request->input('college'))->get();
+    return $departments;
+  }
 }

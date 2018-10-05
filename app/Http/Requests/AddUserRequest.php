@@ -10,7 +10,7 @@ use App\ResponseBuilder;
 use Auth;
 
 
-class AddCollegeRequest extends FormRequest
+class AddUserRequest extends FormRequest
 {
   /**
   * Determine if the user is authorized to make this request.
@@ -31,7 +31,7 @@ class AddCollegeRequest extends FormRequest
   {
     return [
       'name' => 'required',
-      'address' => 'required',
+      'email' => 'required',
     ];
   }
 

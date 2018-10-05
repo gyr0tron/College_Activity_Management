@@ -15,6 +15,8 @@ Route::get('/', 'HomeController@getHome');
 Route::get('/login', 'Auth\LoginController@showLoginForm');
 Route::post('/login', 'Auth\LoginController@login');
 
+Route::get('/password', 'HomeController@getHome')->name("set_password");
+
 // Dashboard
 Route::get('/dashboard', 'DashboardController@get');
 
@@ -23,10 +25,11 @@ Route::get('/dashboard', 'DashboardController@get');
 Route::prefix('api/v1')->group(function () {
   // User
   Route::get('/user/info','api\UserController@getInfo');
-  Route::get('/users/get','api\UserController@getUsers');
+  Route::get('/users/list','api\UserController@getUsers');
   Route::get('/users/add','api\UserController@postAdd');
   // College
   Route::post('/colleges/add','api\CollegeApiController@postAdd');
   // Department
   Route::post('/departments/add','api\DepartmentApiController@postAdd');
+  Route::post('/departments/list','api\DepartmentApiController@getList');
 });
