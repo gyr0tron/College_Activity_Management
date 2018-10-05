@@ -16,5 +16,14 @@ mix.js('resources/js/app.js', 'public/js')
     .sass('resources/sass/home.scss', 'public/css');
 
 mix.scripts([
-    'resources/js/home.js',
+    'resources/js/home/jquery.min.js',
+    'resources/js/home/bootstrap.js',
+    'resources/js/home/scrollreveal.js',
+    'resources/js/home/parallax.js',
+    'resources/js/home/home.js',
 ], 'public/js/home.js');
+
+mix.styles([
+    'resources/sass/home/bootstrap.css',
+    'resources/sass/home/home.css',
+], 'public/css/home.css');

@@ -1,0 +1,3 @@
+$(function() {
+  ScrollReveal().reveal('.reveal');
+});
